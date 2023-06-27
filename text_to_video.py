@@ -5,18 +5,39 @@ import json
 
 # set up text to speech engine
 class Audio():
-    engine = pyttsx3.init('sapi5')
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[2].id)
-    engine.setProperty('rate', 200)
-    engine.setProperty('volume', 1)
+    def __init__(self, input_text, output_audio_path):
+        self.input_text = input_text
+        self.output_audio_path = output_audio_path
+
+        self.engine = self.tts_engine()
+        
+    # select cantonese voice if available
+    def select_cantonese(self, voices):
+        voice_id = None
+        for voice in voices:
+            if voice.name == 'Microsoft Tracy Desktop - Chinese(Traditional, HongKong SAR)':
+                voice_id =  voice.id
+                return voice_id
+            
+        # stop the program if no cantonese voice found
+        if voice_id == None:
+            raise Exception('No Cantonese voice found. Please install the voice pack.')
+            
+    # set up text-to-speech engine
+    def tts_engine(self):
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', self.select_cantonese(voices))
+        engine.setProperty('rate', 220)
+        engine.setProperty('volume', 1)
+        return engine
 
     # generate text-to-speech audio and save to audio folder
-    def tts_generator(self, input_text, output_audio_path):
-        self.engine.save_to_file(input_text, output_audio_path)
+    def tts_generator(self):
+        self.engine.save_to_file(self.input_text, self.output_audio_path)
         self.engine.runAndWait()
-        return output_audio_path
-
+        return self.output_audio_path
+    
 
 # set up image and audio clip
 class Image():
@@ -30,9 +51,9 @@ class Image():
 
     # generate audio clip
     def audio_clip_generator(self):
-        audio = Audio().tts_generator(self.input_text, self.audio_path)
-        audio = AudioFileClip(audio)
-        return audio
+        audio = Audio(self.input_text, self.audio_path).tts_generator()
+        audio_clip = AudioFileClip(audio)
+        return audio_clip
             
     # generate image clip and combine with audio clip
     def image_clip_generator(self):
@@ -65,10 +86,8 @@ class Video():
         with open(self.input_file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             clips = []
-
             # clear existing audio files in audio folder before video generation
             self.remove_audio_files()
-
             # generate clips following the order of json file
             for index, content in enumerate(data['contents']):
                 if 'paragraph' and 'image' and 'fadein' in content:
