@@ -6,7 +6,7 @@ The script is run by: `python app.py`
 
 The script is tested on `Windows 10`.
 
-Libraries used:
+###### Libraries used:
 * moviepy for video generation
 * pyttsx3 for text-to-speech
 * json for reading json file
