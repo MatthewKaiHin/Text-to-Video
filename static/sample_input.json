@@ -1,0 +1,40 @@
+{
+    "id": "1",
+    "title": "南法一星法國菜，晚市套餐限時85折。",
+    "author": "Grassrootseater",
+    "post_date": "2023-06-21",
+    "avatar": "./photo/example-avater.jpg",
+    "contents": [
+        {
+            "image": "image_0.jpg",
+            "fadein": 0,
+            "paragraph": "聽講大廚喺好多米芝蓮餐廳做過，今次特登走嚟試吓佢哋嘅法國餐。晚市套餐做緊85折，包咗頭盤同主菜。餐廳分咗室外同室內用餐區，室外仲可以睇到海景，如果拍拖嚟食飯都幾浪漫！"
+        },
+        {
+            "image": "image_1.jpg",
+            "fadein": 3,
+            "paragraph": "法式鵝肝焦糖燉蛋配田園沙律。呢個𝗽𝗿𝗲𝘀𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻都係第一次見。軟滑嘅鵝肝醬加上焦糖脆面同紅莓醬，再配有脆多士。賣相精緻，口感𝗰𝗿𝗲𝗮𝗺𝘆，呢個食法幾特別。"
+        },
+        {
+            "image": "image_2.jpg",
+            "fadein": 3,
+            "paragraph": "法式生牛肉他他。牛肉他他配咗鵪鶉蛋同多士，份量幾多。他他幾有咬口，但比較難咬開。"
+        },
+        {
+            "image": "image_3.jpg",
+            "fadein": 3,
+            "paragraph": "油封法國鴨腿配新薯,紅莓汁。 鴨肉細嫩，加埋皮一齊食就更加香。點上酸酸甜甜嘅紅莓醬食晒成隻都唔覺油膩。旁邊嘅蔬菜烤得又香又腍好有誠意！"
+        },
+        {
+            "image": "image_4.jpg",
+            "fadein": 3,
+            "paragraph": "香煎海鱸魚配蜆肉忌廉汁。啖啖魚肉，煮得唔會過老，加埋魚皮嘅油脂更香口。配有3隻鮮嫩又高質嘅沙白。墊底嘅薯蓉都非常香滑，得到薯蓉控嘅認證"
+        },
+        {
+            "image": "image_5.jpg",
+            "fadein": 3,
+            "paragraph": "最後個餐配咗杯咖啡或奶茶"
+        }
+    ],
+    "url": "https://blog.ulifestyle.com.hk/article/grassrootseaters/4259334/%E5%8D%97%E6%B3%95%E4%B8%80%E6%98%9F%E6%B3%95%E5%9C%8B%E8%8F%9C-%E6%99%9A%E5%B8%82%E5%A5%97%E9%A4%90%E9%99%90%E6%99%8285%E6%8A%98"
+}
