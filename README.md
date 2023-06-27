@@ -13,11 +13,11 @@ pyttsx3 for text-to-speech
 json for reading json file
 
 Before running the script, please install the libraries by:
-    pip install requirements.txt
+> `pip install requirements.txt`
 or
-    pip install moviepy
-    pip install pyttsx3
-    pip install json
+> pip install moviepy
+> pip install pyttsx3
+> pip install json
 
 ## **Input format**:
 The input is a json file with the following format:
@@ -47,11 +47,11 @@ The input is a json file with the following format:
 6. Run the script.
 
 * image folder: 
-The path to the image
+> The path to the image
 * audio folder: 
-The path to the audio that is generated from the text. 
-The audio should be removed after the video is generated. 
-The script will also clean up the audio folder before generating the video.
+> The path to the audio that is generated from the text. 
+> The audio should be removed after the video is generated. 
+> The script will also clean up the audio folder before generating the video.
 * video folder: 
-The path to the video that is generated from the image and audio. 
-The video will be saved in the video folder.
+> The path to the video that is generated from the image and audio. 
+> The video will be saved in the video folder.
