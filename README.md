@@ -1,12 +1,12 @@
 # Text-to-Video
-This script is used to generate video from text.
+This script is used to generate video from text. /n
 The output is a video file with the name specified in the script.
 
 The script is run by: `python app.py`
 
 The script is tested on `Windows 10`.
 
-###### Libraries used:
+### **Libraries used**:
 * moviepy for video generation
 * pyttsx3 for text-to-speech
 * json for reading json file
@@ -43,9 +43,6 @@ The input is a json file with the following format:
 * image folder: 
 > The path to the image
 * audio folder: 
-> The path to the audio that is generated from the text. 
-> The audio should be removed after the video is generated. 
-> The script will also clean up the audio folder before generating the video.
+> The path to the audio that is generated from the text. The audio should be removed after the video is generated. The script will also clean up the audio folder before generating the video.
 * video folder: 
-> The path to the video that is generated from the image and audio. 
-> The video will be saved in the video folder.
+> The path to the video that is generated from the image and audio. The video will be saved in the video folder.
