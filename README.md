@@ -13,13 +13,13 @@ pyttsx3 for text-to-speech
 json for reading json file
 
 Before running the script, please install the libraries by:
-`pip install requirements.txt`
+    pip install requirements.txt
 or
-`pip install moviepy`
-`pip install pyttsx3`
-`pip install json`
+    pip install moviepy
+    pip install pyttsx3
+    pip install json
 
-### Input format:
+## **Input format**:
 The input is a json file with the following format:
 ```
 {
@@ -38,7 +38,7 @@ The input is a json file with the following format:
 }
 ```
 
-###Set up:
+## **Set up**:
 1. Create a folder named "static" in the same directory as this script.
 2. Create a folder named "image", "audio" and "video" in the "static" folder.
 3. Upload the images in the "image" folder.
