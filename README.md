@@ -2,22 +2,16 @@
 This script is used to generate video from text.
 The output is a video file with the name specified in the script.
 
-The script is run by:
-python app.py
+The script is run by: `python app.py`
 
-The script is tested on Windows 10.
+The script is tested on `Windows 10`.
 
 Libraries used:
-moviepy for video generation
-pyttsx3 for text-to-speech
-json for reading json file
+* moviepy for video generation
+* pyttsx3 for text-to-speech
+* json for reading json file
 
-Before running the script, please install the libraries by:
-> `pip install requirements.txt`
-or
-> pip install moviepy
-> pip install pyttsx3
-> pip install json
+Before running the script, please install the libraries by: `pip install requirements.txt`
 
 ## **Input format**:
 The input is a json file with the following format:
