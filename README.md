@@ -1,5 +1,5 @@
 # Text-to-Video
-This script is used to generate video from text. /n
+This script is used to generate video from text.
 The output is a video file with the name specified in the script.
 
 The script is run by: `python app.py`
