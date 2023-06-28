@@ -9,7 +9,7 @@ The script will generate audio clips that only support `Cantonese`.
 
 The granerated audio clips and video will be stored in the folder named `audio` and `video` respectively. Every time you run this script, the audio folder will be cleared before and after video generation. The video will be supported in `mp4` format with `24 fps` and `aac audio codec`.
 
-***
+## **How to use**:
 The script is run by: `python app.py`
 
 Before running the script, please install the libraries by: `pip install requirements.txt`
@@ -42,8 +42,8 @@ The input is a json file with the following format:
 1. Create a folder named `static` in the same directory as this script.
 2. Create a folder named `image`, `audio` and `video` in the `static` folder.
 3. Upload the images in the `image` folder.
-4. Create a json file with the format specified above and upload it in the "static" folder.
-5. Change the input_data, output_dir and output_name in the script to the correct path and name.
+4. Create a json file with the format specified above and upload it in the `static` folder.
+5. Change the `input_data`, `output_dir` and `output_name` in the script to the correct path and name.
 6. Run the script.
 
 |Folder|Description|
