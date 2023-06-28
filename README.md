@@ -42,10 +42,8 @@ The input is a json file with the following format:
 4. Create a json file with the format specified above and upload it in the `static` folder.
 5. Change the `input_data`, `output_dir` and `output_name` in the script to the correct path and name.
 6. Before running the script, please install the libraries by: `pip install requirements.txt`.
+7. Run the script by `python app.py`.
 
 Libraries used:
 * moviepy for video generation
 * pyttsx3 for text-to-speech
-
-7. Run the script by `python app.py`.
-
