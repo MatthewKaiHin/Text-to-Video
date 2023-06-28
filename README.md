@@ -46,7 +46,6 @@ The input is a json file with the following format:
 Libraries used:
 * moviepy for video generation
 * pyttsx3 for text-to-speech
-* json for reading json file
 
-6. Run the script by `python app.py`.
+7. Run the script by `python app.py`.
 
