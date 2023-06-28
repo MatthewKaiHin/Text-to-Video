@@ -2,6 +2,16 @@ from moviepy.editor import *
 import pyttsx3
 import json
 
+"""
+Read me:
+This script is used to generate video from image and text, and tested in Windows 10.
+If there is more than one image, you should manually seprate the text into paragraphs. Each paragraph of text will be converted to audio clip and combined with corresponding image.
+Images should be stored in the folder named 'image'. The image path and text should be stored in JSON file. 
+The script will generate audio clips that only support Cantonese. Please make sure you have Cantonese voice installed in your windows system.
+The granerated audio clips and video will be stored in the folder named 'audio' and 'video' respectively.
+Every time you run this script, the audio folder will be cleared before and after video generation.
+The video will be supported in mp4 format with 24 fps and aac audio codec.
+"""
 
 # set up text to speech engine
 class Audio():
@@ -11,17 +21,14 @@ class Audio():
 
         self.engine = self.tts_engine()
         
-    # select cantonese voice if available
+    # select cantonese voice
     def select_cantonese(self, voices):
-        voice_id = None
+        language = 'Microsoft Tracy Desktop - Chinese(Traditional, HongKong SAR)'
         for voice in voices:
-            if voice.name == 'Microsoft Tracy Desktop - Chinese(Traditional, HongKong SAR)':
-                voice_id =  voice.id
-                return voice_id
-            
-        # stop the program if no cantonese voice found
-        if voice_id == None:
-            raise Exception('No Cantonese voice found. Please install the voice pack.')
+            if voice.name == language:
+                return voice.id
+        # if no cantonese voice found, raise error message
+        raise Exception('No Cantonese voice found.')
             
     # set up text-to-speech engine
     def tts_engine(self):
