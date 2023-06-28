@@ -1,4 +1,4 @@
-# Text-to-Video
+# Text-to-Video (Cantonese)
 This script is used to generate video from image and text, and tested in `Windows 11`.
 
 If there is more than one image, you should manually seprate the text into paragraphs. Each paragraph of text will be converted to audio clip and combined with corresponding image.
